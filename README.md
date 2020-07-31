@@ -1,2 +1,2 @@
 # Javascript
-Notes I took while learning javascript
+Notes I took while learning js
