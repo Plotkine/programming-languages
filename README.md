@@ -1,2 +1,3 @@
-# js_notes
+# js
+
 notes I took while learning javascript
