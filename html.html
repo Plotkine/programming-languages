@@ -1,0 +1,56 @@
+########
+# HTML #
+########
+
+<!--
+  .htm is exactly the same as .html
+-->
+
+<!DOCTYPE html> <!--Tells the browser it's HTML5-->
+<html>
+<head>
+<!--Put here things that are not displayed on the page-->
+</head>
+<body>
+<!--Put here things that are displayed on the page-->
+</body>
+</html>
+
+################################################################
+
+<!--span is for delimiting an inline (== no new line) part, div is for delimiting a block-->
+
+Hello <span style="border: 1px solid black">world</span>!
+<br><br> <!-- new lines -->
+Hello
+<div style="border: 1px solid black">
+world
+</div>
+!
+
+################################################################
+
+<!-- file paths -->
+
+<head>
+<base href="https://www.w3schools.com/" target="_blank"> <!--Specifies the base URL for all the links-->
+</head>
+
+<img src="https://www.w3schools.com/images/picture.jpg"> <!--image on this web server-->
+<img src="https://www.wikipedia.org/portal/wikipedia.org/assets/img/Wikipedia-logo-v2@1.5x.png"> <!--external-->
+
+<img src="picture.jpg">         <!--same folder as current page-->
+<img src="images/picture.jpg">  <!--image folder inside the current folder-->
+
+<!--
+  !!!
+-->
+<img src="/images/picture.jpg"> <!--image folder at web root!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+<img src="../picture.jpg">      <!--when level up from current folder-->
+
+<!--
+Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".
+
+Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".
+-->
