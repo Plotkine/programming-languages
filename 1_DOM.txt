@@ -1,0 +1,36 @@
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+https://www.w3schools.com/js/pic_htmltree.gif
+
+With the object model, JavaScript gets all the power it needs to create dynamic HTML. It can:
+- change all the HTML elements in the page
+- change all the HTML attributes in the page
+- change all the CSS styles in the page
+- remove existing HTML elements and attributes
+- add new HTML elements and attributes
+- react to all existing HTML events in the page
+- create new HTML events in the page
+
+The HTML DOM is a standard object model and programming interface for HTML. It defines:
+- the HTML elements as objects
+- the properties of all HTML elements
+- the methods to access all HTML elements
+- the events for all HTML elements
+
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+###########################################
+<!--Example-->
+<p id="demo"></p>
+
+<script> <!--Note that script blocks are executed in the order at which they appear in the html file-->
+document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+#################################################
+
+
+
+In the above example, getElementById is a method and innerHTML is a property.
+Note that the innerHTML property can be used to get or change any HTML element, including <html> and <body>.
