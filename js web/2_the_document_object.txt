@@ -1,0 +1,55 @@
+The document object is at the root of the DOM tree
+
+To access any element of an HTML page, we must first access the document object.
+
+Get HTML elements:
+- document.getElementById(id)
+- document.getElementsByTagName(name)
+- document.getElementsByClassName(name)
+
+Set HTML elements content/attributes/style:
+- element.innerHTML =  new html content
+- element.attribute = new value
+- element.style.property = new style
+- element.setAttribute(attribute, value)
+
+Add/remove HTML elements:
+- document.createElement(element)
+- document.removeChild(element)
+- document.appendChild(element)
+- document.replaceChild(new, old)
+- document.write(text)
+
+Add event handler:
+- document.getElementById(id).onclick = function(){code}
+
+################################################################
+
+document object attributes:
+- document.anchors             Returns all <a> elements that have a name attribute
+- document.applets             Deprecated
+- document.baseURI             Returns the absolute base URI of the document
+- document.body                Returns the <body> element
+- document.cookie              Returns the document's cookie
+- document.doctype             Returns the document's doctype
+- document.documentElement     Returns the <html> element
+- document.documentMode        Returns the mode used by the browser
+- document.documentURI         Returns the URI of the document
+- document.domain              Returns the domain name of the document server
+- document.domConfig           Obsolete.
+- document.embeds              Returns all <embed> elements
+- document.forms               Returns all <form> elements
+- document.head                Returns the <head> element
+- document.images              Returns all <img> elements
+- document.implementation      Returns the DOM implementation
+- document.inputEncoding       Returns the document's encoding (character set)
+- document.lastModified        Returns the date and time the document was updated
+- document.links               Returns all <area> and <a> elements that have a href attribute
+- document.readyState          Returns the (loading) status of the document
+- document.referrer            Returns the URI of the referrer (the linking document)
+- document.scripts             Returns all <script> elements
+- document.strictErrorChecking Returns if error checking is enforced
+- document.title               Returns the <title> element
+- document.URL                 Returns the complete URL of the document
+
+Note that while we can access cookies through document.cookie, cookies are not part of the DOM

@@ -1,0 +1,46 @@
+<!--
+change HTML content:
+- document.getElementById(id).innerHTML = new HTML
+
+change value of an attribute:
+- document.getElementById(id).attribute = new value
+-->
+
+################################################################
+
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+################################################################
+
+<!--Change heading-->
+
+<h1 id="id01">Old Heading</h1>
+
+<script>
+const element = document.getElementById("id01");
+element.innerHTML = "New Heading";
+</script>
+
+################################################################
+
+<!--Display current time-->
+
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML = "Date : " + Date();
+</script>
+
+################################################################
+
+<!--Change image-->
+
+<img id="myImage" src="smiley.gif">
+
+<script>
+document.getElementById("myImage").src = "landscape.jpg";
+</script>
