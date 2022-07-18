@@ -1,0 +1,23 @@
+<!--
+This form:
+- collects first name and last name
+- sends the results to /action_page.php 
+- the data is sent as a GET request: https://www.w3schools.com/action_page.php?fname=John&lname=Doe
+-->
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John"><br> <!--if you don't specify the name attribute, this input won't be sent-->
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit"> <!--defines the button that will trigger the action (send data to /action_page.php)-->
+</form>
+<!--
+this example is a form with user text input but it can be:
+- radio buttons (<input type="radio")
+- check boxes (<input type="checkbox")
+
+the "target" attribute of the "form" tag is "_self" by default, to tell to display the result of the submission (i.e. the response from the request to action_page.php)
+It can also be "_blank" (new tab) for example
+
+the "method" attribute of the "form" is "get" by default but can also be "post" (the payload is then "fname=John&lname=Doe")
+-->
