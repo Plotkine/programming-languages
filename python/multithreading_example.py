@@ -17,7 +17,7 @@ for i in range(10):
 for thread in threads:
     thread.start()
 
-for i in range(len(threads)):
-    threads[i].join() #join stops main process to wait for the threads to finish
+for thread in threads:
+    thread.join() #join stops main process to wait for the threads to finish
 
 print(str(results))
