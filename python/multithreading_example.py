@@ -15,6 +15,7 @@ for i in range(10):
     threads.append(Thread(target=foo, args=(i, results)))
 
 for thread in threads:
+    thread.daemon = True # exit thread when main process exits
     thread.start()
 
 for thread in threads:
